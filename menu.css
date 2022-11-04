@@ -1,0 +1,18 @@
+a:link, a:visited{
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #ccc;
+
+}
+a:hover {
+    background-color:#000;
+    color:#fff;/*마우스 위로 올리면 색 변경됨*/
+}
+li{
+    float: left;
+}
+ul{
+    list-style: none;
+}
