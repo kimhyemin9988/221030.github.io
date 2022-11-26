@@ -18,7 +18,8 @@
 			document.write("1부터"+n+"까지 더하면 "+sum); //return값 따로 출력따로 하지 않고 한번에 가능함
 		}
 		var userNumber = prompt("얼마까지 더할까요?"); // 문자열로 저장된다 
-			if(userNumber !== null) // 취소버튼을 누르면 실행되지 않도록 안그러면 취소눌러도 실행됨.Null이라 쓰면 오류남.
+			if(userNumber != null) // 취소버튼을 누르면 실행되지 않도록 안그러면 취소눌러도 실행됨.Null이라 쓰면 오류남.
+				//!== : 피연산자가 같지 않거나 자료형이 같지 않으면 true
 			{
 				calcSum(parseInt(userNumber)); // prompt로 입력받은 값은 parseInt함수를 사용하여 괄호 안의 값을 정수로 변환.
 			}
